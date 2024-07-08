@@ -1,0 +1,138 @@
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 9rem;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  max-width: 37.5rem;
+}
+
+.title-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 200px;
+    width: 8px;
+    background-color: var(--primary);
+}
+
+.title-container .title {
+  font-weight: 600;
+  font-size: 54px;
+  color: var(--black);
+  margin-bottom: 1.8rem;
+}
+
+.title-container .description {
+    color: var(--gray);
+}
+
+.contact-content {
+  display: flex;
+  width: 100%;
+  padding: 0 8.438rem;
+  margin-top: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 30rem;
+}
+
+form .field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+form .field label {
+  position: absolute;
+  top: 19px;
+  left: 24px;
+  padding: 0 4px;
+
+  font-size: 1.125rem;
+  color: var(--gray);
+  transition: all .3s ease-in-out;
+  cursor: text;
+}
+
+form .field .input {
+  font-size: 1.125rem;
+  padding: 1.125rem 1.5rem;
+  color: var(--black);
+
+  border-radius: 12px;
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  outline: none;
+  transition: all .3s ease-in-out;
+
+  &:focus, &:valid {
+    background-color: white;
+  }
+}
+
+#message {
+  height: 200px;
+}
+
+form .field .input:valid + label,
+form .field .input:focus + label {
+  font-size: 0.75rem;
+  transform: translate(0px, -28px);
+  background: white;
+}
+
+form .submit {
+  width: 50%;
+  padding: 1.3rem 4rem;
+  
+  border: none;
+  border-radius: 40px 5px 40px 5px;
+  font-size: 1.125rem;
+  font-weight: 500;
+
+  background-color: var(--primary);
+  color: white;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+  }
+}
+
+.contact-ways {
+  margin: 0 1.8rem;
+}
+
+.contact-ways .contact-way {
+  margin: 0.5rem 0 2.4rem 0;
+}
+
+.contact-way img {
+  height: 48px;
+}
+
+.contact-way a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  color: var(--black);
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    color: var(--primary);
+  }
+}

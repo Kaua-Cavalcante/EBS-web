@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBS</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <script src="./scripts/animations.js" defer></script>
+  </head>
+  <body>
+    <header class="navigation">
+      <img class="logo" src="./assets/Logoebs.svg" alt="Logo" />
+      <nav class="links">
+        <a href="#">Home</a> <a href="#">Sobre nós</a> <a href="#">Serviços</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="primary-text">
+          <span>Consistência</span> e <span>Qualidade</span> você encontra aqui.
+        </h1>
+        <p class="secondary-text">
+          Mais do que portões automáticos, oferecemos soluções completas para a
+          sua segurança.
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="explore">Saiba mais</a>
+          <a href="./contact.html" class="contato">Contato</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <h3 class="stat-number" valor="2834">0</h3>
+            <p class="stat-description">Vendas feitas</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" valor="1938">0</h3>
+            <p class="stat-description">Portões instalados</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" valor="1000">0</h3>
+            <span>+</span>
+            <p class="stat-description">Clientes satisfeitos</p>
+          </div>
+        </div>
+        <img class="line" src="./assets/line.svg" alt="linha" />
+      </div>
+      <div class="hero-image"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="title-container">
+        <h2 class="title">Fale conosco</h2>
+        <p class="description">
+          Seja para solicitar um orçamento, tirar dúvidas sobre nossos produtos
+          ou agendar uma instalação, nossa equipe está pronta para atender você.
+        </p>
+      </div>
+      <div class="contact-content">
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+          <div class="field">
+            <input type="text" name="name" id="name" class="input" required />
+            <label for="name">Nome</label>
+          </div>
+
+          <div class="field">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input"
+              required
+            />
+            <label for="email">Email</label>
+          </div>
+
+          <div class="field">
+            <textarea
+              type="text"
+              name="message"
+              id="message"
+              class="input"
+              required
+            ></textarea>
+            <label for="message">Mensagem</label>
+          </div>
+          <button class="submit" type="submit">Enviar</button>
+        </form>
+
+        <div class="contact-ways">
+          <div class="contact-way">
+            <a
+              href="https://api.whatsapp.com/send?phone=5511983185017"
+              target="_blank"
+              ><img
+                src="./assets/wpp.svg"
+                alt="whatsapp icon"
+              />(11)91234-5678</a
+            >
+          </div>
+          <div class="contact-way">
+            <a href="" target="_blank"
+              ><img
+                src="./assets/instagram.svg"
+                alt="instagram icon"
+              />@EBS_Portões</a
+            >
+          </div>
+          <div class="contact-way">
+            <a href="tel:+5511983185017" target="_blank"
+              ><img
+                src="./assets/phone.svg"
+                alt="phone icon"
+              />(11)91234-5678</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=5511983185017" target="_blank">
+      <div class="btn-whatsapp pulsaDelay">
+        <img src="./assets/wpp.svg" alt="" />
+      </div>
+    </a>
+  </body>
+</html>
