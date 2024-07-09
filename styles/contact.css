@@ -11,16 +11,16 @@
   justify-content: center;
   flex-direction: column;
 
-  max-width: 37.5rem;
+  max-width: 40.5rem;
 }
 
 .title-container::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 200px;
-    width: 8px;
-    background-color: var(--primary);
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 200px;
+  width: 8px;
+  background-color: var(--primary);
 }
 
 .title-container .title {
@@ -31,7 +31,8 @@
 }
 
 .title-container .description {
-    color: var(--gray);
+  text-align: center;
+  color: var(--gray);
 }
 
 .contact-content {
@@ -62,7 +63,7 @@ form .field label {
 
   font-size: 1.125rem;
   color: var(--gray);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: text;
 }
 
@@ -75,9 +76,10 @@ form .field .input {
   border: 1px solid var(--white);
   background-color: var(--white);
   outline: none;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
-  &:focus, &:valid {
+  &:focus,
+  &:valid {
     background-color: white;
   }
 }
@@ -96,7 +98,7 @@ form .field .input:focus + label {
 form .submit {
   width: 50%;
   padding: 1.3rem 4rem;
-  
+
   border: none;
   border-radius: 40px 5px 40px 5px;
   font-size: 1.125rem;
@@ -130,7 +132,7 @@ form .submit {
   gap: 0.8rem;
 
   color: var(--black);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     color: var(--primary);
