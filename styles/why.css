@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 8.75rem;
 }
 
 .why .title span {
@@ -10,15 +11,71 @@
 
 .why-container {
   display: flex;
+  gap: 5.25rem;
+  margin-top: 5rem;
+  width: 100%;
+  padding: 0 3.125rem 0 8.75rem;
 }
 
-.why-cover {
+.why-container .why-cover {
   height: 850px;
   width: 45rem;
+
   background-image: url(../assets/why-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
 
   border-radius: 10px 300px 10px 10px;
   z-index: 0;
+}
+
+.why-container .reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 8.75rem;
+  padding: 8.75rem 0;
+}
+
+.reasons .reason {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  max-width: 32rem;
+}
+
+.reason .number {
+  position: relative;
+  font-weight: 600;
+  font-size: 4.5rem;
+  color: var(--black);
+  margin-bottom: 2.5rem;
+}
+
+.number::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -28px;
+  
+  height: 76px;
+  width: 76px;
+
+  border-radius: 5px 38px 5px 38px;
+  background-color: var(--primary);
+  filter: opacity(0.5);
+  z-index: -1;
+}
+
+.reason:nth-child(1) + .reason .number::before {
+  background-color: var(--orange);
+}
+
+.reason:nth-child(2) + .reason .number::before {
+  background-color: var(--green);
+}
+
+.reason p {
+  font-size: 1.125rem;
+  color: var(--gray);
 }
