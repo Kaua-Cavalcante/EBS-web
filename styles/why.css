@@ -15,18 +15,23 @@
   margin-top: 5rem;
   width: 100%;
   padding: 0 3.125rem 0 8.75rem;
+
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
 }
 
 .why-container .why-cover {
   height: 850px;
   width: 45rem;
 
-  background-image: url(../assets/why-cover.png);
+  background-image: url(../assets/why-cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 15%;
 
   border-radius: 10px 300px 10px 10px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .why-container .reasons {
