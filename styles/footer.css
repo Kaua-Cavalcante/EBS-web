@@ -1,0 +1,26 @@
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 4.5rem;
+    margin-top: 4.25rem;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    height: 1px;
+    width: 80%;
+
+    background-color: #eaeaea;
+}
+
+footer p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #C2C2C2;
+}
