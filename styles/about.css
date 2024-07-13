@@ -1,26 +1,36 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
 
-    gap: 45px;
-    min-height: 100vh;
-
-    background-image: url(../assets/about-cover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("../assets/about-cover.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .about .title {
-    font-weight: 500;
-    font-size: 3rem;
-    color: var(--white);
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--white);
 }
 
 .about .about-text {
-    max-width: 50rem;
-    font-size: 1.125rem;
-    color: var(--white);
+  max-width: 50rem;
+  font-size: 1.125rem;
+  color: var(--white);
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: 100%;
+  z-index: -1;
 }
