@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,4 +34,31 @@
   left: 0;
   background-size: 100%;
   z-index: -1;
+}
+
+.about-text.bf-marks::before {
+  content: "";
+  position: absolute;
+  top: 180px;
+  left: 300px;
+
+  height: 90px;
+  width: 90px;
+
+  background-image: url(../assets/bf-mark.svg);
+  background-repeat: no-repeat;
+}
+
+.about-text.af-marks::after {
+  content: "";
+  position: absolute;
+  bottom: 90px;
+  right: 300px;
+
+  height: 90px;
+  width: 90px;
+
+  background-image: url(../assets/bf-mark.svg);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
 }
