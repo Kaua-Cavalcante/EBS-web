@@ -1,11 +1,14 @@
 .hero {
-  max-width: 56rem;
-  padding: 0 8rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 3.125rem 0 8rem;
   margin: 3rem 0 8rem 0;
 }
 
 .hero-content {
-  position: relative;
+  max-width: 37.5rem;
+  margin-top: 12rem;
 }
 
 .hero-content .primary-text {
@@ -26,16 +29,12 @@
 
 .hero .line {
   position: absolute;
-  top: 25rem;
-  left: -9.5rem;
+  top: 39rem;
+  left: -1.5rem;
   z-index: -2;
 }
 
 .hero-image {
-  position: absolute;
-  top: 0;
-  right: 3.125rem;
-
   height: 850px;
   width: 45rem;
 

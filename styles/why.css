@@ -5,6 +5,10 @@
   margin-bottom: 8.75rem;
 }
 
+.why .title {
+  background-color: white;
+}
+
 .why .title span {
   color: var(--primary);
 }
