@@ -18,14 +18,14 @@
   content: "";
   position: absolute;
   left: 0;
-  height: 200px;
+  height: 12.5rem;
   width: 8px;
   background-color: var(--primary);
 }
 
 .title-container .title {
   font-weight: 600;
-  font-size: 54px;
+  font-size: 3.375rem;
   color: var(--black);
   margin-bottom: 1.8rem;
 }
@@ -57,8 +57,8 @@ form .field {
 
 form .field label {
   position: absolute;
-  top: 19px;
-  left: 24px;
+  top: 1.188rem;
+  left: 1.5rem;
   padding: 0 4px;
 
   font-size: 1.125rem;
@@ -72,7 +72,7 @@ form .field .input {
   padding: 1.125rem 1.5rem;
   color: var(--black);
 
-  border-radius: 12px;
+  border-radius: 0.75rem;
   border: 1px solid var(--white);
   background-color: var(--white);
   outline: none;
@@ -91,7 +91,7 @@ form .field .input {
 form .field .input:valid + label,
 form .field .input:focus + label {
   font-size: 0.75rem;
-  transform: translate(0px, -28px);
+  transform: translate(0px, -1.75rem);
   background: white;
 }
 
@@ -100,7 +100,7 @@ form .submit {
   padding: 1.3rem 4rem;
 
   border: none;
-  border-radius: 40px 5px 40px 5px;
+  border-radius: 2.5rem 0.31rem 2.5rem 0.31rem;
   font-size: 1.125rem;
   font-weight: 500;
 
@@ -123,7 +123,7 @@ form .submit {
 }
 
 .contact-way img {
-  height: 48px;
+  height: 3rem;
 }
 
 .contact-way a {

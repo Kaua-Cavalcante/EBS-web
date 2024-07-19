@@ -26,7 +26,7 @@
 }
 
 .why-container .why-cover {
-  height: 850px;
+  height: 53.125rem;
   width: 45rem;
 
   background-image: url(../assets/why-cover.jpg);
@@ -34,7 +34,7 @@
   background-size: cover;
   background-position: 15%;
 
-  border-radius: 10px 300px 10px 10px;
+  border-radius: 0.625rem 18.75rem 0.625rem 0.625rem;
   z-index: -1;
 }
 
@@ -64,13 +64,13 @@
 .number::before {
   content: "";
   position: absolute;
-  bottom: -10px;
-  left: -28px;
+  bottom: -0.625rem;
+  left: -1.75rem;
   
-  height: 76px;
-  width: 76px;
+  height: 4.75rem;
+  width: 4.75rem;
 
-  border-radius: 5px 38px 5px 38px;
+  border-radius: 0.31rem 2.375rem 0.31rem 2.375rem;
   background-color: var(--primary);
   filter: opacity(0.5);
   z-index: -1;

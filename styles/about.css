@@ -1,16 +1,21 @@
 .about {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 45px;
 
   background-image: url("../assets/about-cover.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+}
+
+.about .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.813rem;
 }
 
 .about .title {
@@ -20,7 +25,7 @@
 }
 
 .about .about-text {
-  max-width: 50rem;
+  max-width: 51rem;
   font-size: 1.125rem;
   color: var(--white);
 }
@@ -36,29 +41,33 @@
   z-index: -1;
 }
 
-.about-text.bf-marks::before {
+.about .marks::before {
   content: "";
   position: absolute;
-  top: 180px;
-  left: 300px;
+  left: -6rem;
+  top: -1rem;
 
-  height: 90px;
-  width: 90px;
-
-  background-image: url(../assets/bf-mark.svg);
+  height: 4rem;
+  width: 5.625rem;
+  background-image: url(../assets/marks.svg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.about-text.af-marks::after {
+.about .marks::after {
   content: "";
   position: absolute;
-  bottom: 90px;
-  right: 300px;
+  right: -6rem;
+  bottom: -4rem;
 
-  height: 90px;
-  width: 90px;
+  height: 4rem;
+  width: 5.625rem;
 
-  background-image: url(../assets/bf-mark.svg);
-  background-repeat: no-repeat;
   transform: rotate(180deg);
+
+  background-image: url(../assets/marks.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
